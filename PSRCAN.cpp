@@ -1,7 +1,7 @@
 #include "PSRCAN.h"
 
-PSRCAN::PSRCAN(byte _CS) : mcpCAN(_CS) {
-	mcpCAN.begin(9);
+PSRCAN::PSRCAN(INT8U _CS) : mcpCAN(_CS) {
+	mcpCAN.begin(CAN_125KBPS);
 
 	for(int i = 0; i < 8; i++)
 		buf[i] = 0;

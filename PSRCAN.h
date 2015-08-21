@@ -10,7 +10,7 @@ class PSRCAN
 		INT8U buf[8];
 		int bufLen;
 	public:
-		PSRCAN(byte _CS);
+		PSRCAN(INT8U _CS);
 		void addData(int loc, bool data);			//add 1 byte
 		void addData(int loc, char data);			//add 1 byte
 		void addData(int loc, byte data);			//add 1 byte
@@ -19,7 +19,7 @@ class PSRCAN
 		void addData(int loc, long data);			//add 4 bytes
 		void addData(int loc, unsigned long data);	//add 4 bytes
 		void addData(int loc, float data);			//add 4 bytes
-		void sendMSG(unsigned long ID, byte funcNum);
+		void sendMSG(INT32U ID, INT8U funcNum);
 };
 
 #endif
