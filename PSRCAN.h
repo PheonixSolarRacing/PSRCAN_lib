@@ -11,6 +11,7 @@ class PSRCAN
 		int bufLen;
 	public:
 		PSRCAN(INT8U _CS);
+		void begin();
 		void addData(int loc, bool data);			//add 1 byte
 		void addData(int loc, char data);			//add 1 byte
 		void addData(int loc, byte data);			//add 1 byte
