@@ -1,7 +1,7 @@
 #ifndef _PSRCAN
 #define _PSRCAN
 
-#include "../MCP_CAN_lib-master/mcp_can.h"
+#include "../MCP_CAN_lib-PSR/mcp_can.h"
 
 class PSRCAN
 {
